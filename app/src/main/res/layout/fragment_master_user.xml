@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MasterUser"
+        android:padding="4dp"
+>
+
+    <TextView
+            android:id="@+id/tvEmptyStatus"
+            android:textSize="19sp"
+            android:layout_gravity="center"
+            android:text="Empty"
+            android:fontFamily="@font/roboto_mono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView
+                android:padding="4dp"
+                android:fontFamily="@font/roboto_mono"
+                android:text="Master User"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_user"
+                tools:listitem="@layout/custom_layout_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutAnimation="@anim/layout_animation_fall_down">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+
+            android:clickable="true"
+            android:src="@drawable/add"
+            android:layout_gravity="bottom|end|right"
+            android:layout_margin="@dimen/padding_16dp"
+            android:id="@+id/fabAddUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/recyclerview_user"
+            app:layout_anchorGravity="bottom|end|right"
+    />
+
+</android.support.design.widget.CoordinatorLayout>

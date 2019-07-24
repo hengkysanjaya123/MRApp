@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_8dp"
+        tools:context=".ViewReferral">
+
+
+    <TextView
+            android:id="@+id/tvEmptyStatus"
+            android:textSize="19sp"
+            android:layout_centerInParent="true"
+            android:text="Empty"
+            android:fontFamily="@font/roboto_mono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:id="@+id/layout_referraldata"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:padding="4dp"
+                android:fontFamily="@font/roboto_mono"
+                android:text=" View Referral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Spinner
+                android:id="@+id/spinner_referrer"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        </Spinner>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_viewreferral"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutAnimation="@anim/layout_animation_fall_down">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

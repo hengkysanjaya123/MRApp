@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/padding_8dp"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:padding="@dimen/padding_8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_mono"
+                tools:text="Name"
+                android:id="@+id/tvReferralName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:fontFamily="@font/roboto_mono"
+                tools:text="Email@gmail.com"
+                android:id="@+id/tvReferralEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:textColor="#03A9F4"
+                android:fontFamily="@font/roboto_mono"
+                tools:text="Phone Number"
+                android:id="@+id/tvReferralPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
